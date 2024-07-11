@@ -1,37 +1,36 @@
-2024-07-11 03:28:25 UTC
+2024-07-11 04:59:14 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.3.24061702
 
 Early init took 0.13s
 Loading error handling took 0.06s
-Loading script took 0.32s
-Loading save slot metadata took 0.06s
+Loading script took 0.27s
+Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
 Running init code took 0.11s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Reloading save slot metadata took 0.05s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sherwin\\AppData\\Roaming/RenPy/backups\\02A2 game jam':
-Dump and make backups took 0.12s
+Dump and make backups took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.09s
+Initial gc took 0.13s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.08s
-Prepare screens took 0.21s
+Init translation took 0.19s
+Build styles took 0.04s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.25s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.47s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -46,7 +45,7 @@ Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.06s
+Load screen analysis took 0.05s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
