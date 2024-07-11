@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 62: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Why are you inprisoned here?" 
-                                   ^
+File "game/script.rpy", line 58: end of line expected.
+    show char interested with lipat at float
+                                    ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Thu Jul 11 12:52:46 2024
+Thu Jul 11 17:00:42 2024

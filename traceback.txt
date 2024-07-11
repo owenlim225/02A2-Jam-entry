@@ -1,38 +1,108 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 10, in execute_default
-    default pleased = false
-  File "game/script.rpy", line 10, in <module>
-    default pleased = false
-NameError: name 'false' is not defined
+After initialization, but before game start.
+  File "renpy/common/00accessibility.rpy", line 114, in prepare_screen
+    screen _accessibility():
+  File "renpy/common/00accessibility.rpy", line 114, in prepare
+    screen _accessibility():
+  File "renpy/common/00accessibility.rpy", line 118, in prepare
+    frame:
+  File "renpy/common/00accessibility.rpy", line 118, in prepare
+    frame:
+  File "renpy/common/00accessibility.rpy", line 122, in prepare
+    has side "c b":
+  File "renpy/common/00accessibility.rpy", line 122, in prepare
+    has side "c b":
+  File "renpy/common/00accessibility.rpy", line 127, in prepare
+    fixed:
+  File "renpy/common/00accessibility.rpy", line 127, in prepare
+    fixed:
+  File "renpy/common/00accessibility.rpy", line 129, in prepare
+    viewport:
+  File "renpy/common/00accessibility.rpy", line 129, in prepare
+    viewport:
+  File "renpy/common/00accessibility.rpy", line 133, in prepare
+    has grid 2 1:
+  File "renpy/common/00accessibility.rpy", line 133, in prepare
+    has grid 2 1:
+  File "renpy/common/00accessibility.rpy", line 137, in prepare
+    vbox:
+  File "renpy/common/00accessibility.rpy", line 137, in prepare
+    vbox:
+  File "renpy/common/00accessibility.rpy", line 161, in prepare
+    bar value Preference("font size")
+  File "renpy/common/00accessibility.rpy", line 161, in prepare
+    bar value Preference("font size")
+  File "renpy/common/00accessibility.rpy", line 161, in <module>
+    bar value Preference("font size")
+  File "renpy/common/00preferences.rpy", line 651, in Preference
+    rv = get()
+  File "renpy/common/00preferences.rpy", line 508, in get
+    return FieldValue(_preferences, "font_size", range=bar_range, style="slider", offset=.5, action=_DisplayReset())
+  File "renpy/common/00barvalues.rpy", line 234, in __init__
+    super(FieldValue, self).__init__(*args, **kwargs)
+  File "renpy/common/00barvalues.rpy", line 131, in __init__
+    if isinstance(range, float):
+TypeError: isinstance() arg 2 must be a type or tuple of types
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\exports.py", line 4100, in execute_default_statement
-    i.execute_default(start)
-  File "game/script.rpy", line 10, in execute_default
-    default pleased = false
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\main.py", line 637, in main
+    run(restart)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "renpy/common/00accessibility.rpy", line 114, in prepare_screen
+    screen _accessibility():
+  File "renpy/common/00accessibility.rpy", line 114, in prepare
+    screen _accessibility():
+  File "renpy/common/00accessibility.rpy", line 118, in prepare
+    frame:
+  File "renpy/common/00accessibility.rpy", line 118, in prepare
+    frame:
+  File "renpy/common/00accessibility.rpy", line 122, in prepare
+    has side "c b":
+  File "renpy/common/00accessibility.rpy", line 122, in prepare
+    has side "c b":
+  File "renpy/common/00accessibility.rpy", line 127, in prepare
+    fixed:
+  File "renpy/common/00accessibility.rpy", line 127, in prepare
+    fixed:
+  File "renpy/common/00accessibility.rpy", line 129, in prepare
+    viewport:
+  File "renpy/common/00accessibility.rpy", line 129, in prepare
+    viewport:
+  File "renpy/common/00accessibility.rpy", line 133, in prepare
+    has grid 2 1:
+  File "renpy/common/00accessibility.rpy", line 133, in prepare
+    has grid 2 1:
+  File "renpy/common/00accessibility.rpy", line 137, in prepare
+    vbox:
+  File "renpy/common/00accessibility.rpy", line 137, in prepare
+    vbox:
+  File "renpy/common/00accessibility.rpy", line 161, in prepare
+    bar value Preference("font size")
+  File "renpy/common/00accessibility.rpy", line 161, in prepare
+    bar value Preference("font size")
   File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 10, in <module>
-    default pleased = false
-NameError: name 'false' is not defined
+  File "renpy/common/00accessibility.rpy", line 161, in <module>
+    bar value Preference("font size")
+  File "renpy/common/00preferences.rpy", line 651, in Preference
+    rv = get()
+  File "renpy/common/00preferences.rpy", line 508, in get
+    return FieldValue(_preferences, "font_size", range=bar_range, style="slider", offset=.5, action=_DisplayReset())
+  File "renpy/common/00barvalues.rpy", line 234, in __init__
+    super(FieldValue, self).__init__(*args, **kwargs)
+  File "renpy/common/00barvalues.rpy", line 131, in __init__
+    if isinstance(range, float):
+TypeError: isinstance() arg 2 must be a type or tuple of types
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 02A2 game jam 1.0
-Thu Jul 11 12:42:32 2024
+Thu Jul 11 17:01:23 2024
