@@ -19,42 +19,30 @@ label theEnd:
     elif povname == "francis":
         show char interested with dissolve
         c "Oh thats a good name. It reminds me of someone I buried in an interdimensional hole."
-    elif povname == "fnaf":
-        c "Wtf is that?"
     elif povname == "sex":
         show char amazed with dissolve
         c "That's a funny name."
-        c "Considering you never had it except as your name."
-    elif povname == "william afton":
-        c "Oh, hes a good friend of mine. Hes as autistic as I am."
+        c "Considering you never experience it yourself."
     elif povname == "gay":
         show char amazed with dissolve
         c "We all know."
-    elif povname == "pink guy":
+    elif povname == "pink guy" or povname == "red dick":
         show char neutral with dissolve
-        c "Thats unlikely."
-        c "Out of all lycras, theres only one who can have that name." 
-        c "Still, he disappointed me"
-        
-    elif povname == "red dick":
-        show char neutral with dissolve
-        c "Thats unlikely."
-        c "Out of all lycras, theres only one who can have that name." 
-        c "But hes a good fella ngl."
-        
+        c "Out of everyone, theres only one lycra who can have that name." 
+        c "And that's not you."
     elif povname == "nigga":
         show char shocked with dissolve
-        c "Are you retarted? Do you know what year you are in right now?"
-    elif povname == "peace lords":
+        c "Are you retarted? Don't you want to get cancelled?"
+    elif povname == "peace lords" or povname == "yadaran":
+        show char angry with dissolve
         c "I hate them. Never mention that ever again."
-    elif povname == "yadaran":
-        c "That damn guy. If it wasnt for him I wouldn't be here in the first place."
     else:
         show char amazed with dissolve
         c "Aight, Its a pleasure to meet you [povname]."
 
         "Congratulations, your shift is done."
         "You have 15 mins to leave the facility immediately."
+        show char amazed with dissolve
         hide char amazed with lipat
         c "See you next time, [povname]."
 

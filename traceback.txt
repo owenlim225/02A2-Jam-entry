@@ -1,108 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00accessibility.rpy", line 114, in prepare_screen
-    screen _accessibility():
-  File "renpy/common/00accessibility.rpy", line 114, in prepare
-    screen _accessibility():
-  File "renpy/common/00accessibility.rpy", line 118, in prepare
-    frame:
-  File "renpy/common/00accessibility.rpy", line 118, in prepare
-    frame:
-  File "renpy/common/00accessibility.rpy", line 122, in prepare
-    has side "c b":
-  File "renpy/common/00accessibility.rpy", line 122, in prepare
-    has side "c b":
-  File "renpy/common/00accessibility.rpy", line 127, in prepare
-    fixed:
-  File "renpy/common/00accessibility.rpy", line 127, in prepare
-    fixed:
-  File "renpy/common/00accessibility.rpy", line 129, in prepare
-    viewport:
-  File "renpy/common/00accessibility.rpy", line 129, in prepare
-    viewport:
-  File "renpy/common/00accessibility.rpy", line 133, in prepare
-    has grid 2 1:
-  File "renpy/common/00accessibility.rpy", line 133, in prepare
-    has grid 2 1:
-  File "renpy/common/00accessibility.rpy", line 137, in prepare
-    vbox:
-  File "renpy/common/00accessibility.rpy", line 137, in prepare
-    vbox:
-  File "renpy/common/00accessibility.rpy", line 161, in prepare
-    bar value Preference("font size")
-  File "renpy/common/00accessibility.rpy", line 161, in prepare
-    bar value Preference("font size")
-  File "renpy/common/00accessibility.rpy", line 161, in <module>
-    bar value Preference("font size")
-  File "renpy/common/00preferences.rpy", line 651, in Preference
-    rv = get()
-  File "renpy/common/00preferences.rpy", line 508, in get
-    return FieldValue(_preferences, "font_size", range=bar_range, style="slider", offset=.5, action=_DisplayReset())
-  File "renpy/common/00barvalues.rpy", line 234, in __init__
-    super(FieldValue, self).__init__(*args, **kwargs)
-  File "renpy/common/00barvalues.rpy", line 131, in __init__
-    if isinstance(range, float):
-TypeError: isinstance() arg 2 must be a type or tuple of types
+While running game code:
+  File "game/script.rpy", line 105, in script
+    show char neutral dissolve
+Exception: Image 'char neutral' does not accept attributes 'dissolve'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\main.py", line 637, in main
-    run(restart)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\display\screen.py", line 1026, in prepare_screens
-    s.ast.prepare_screen()
-  File "renpy/common/00accessibility.rpy", line 114, in prepare_screen
-    screen _accessibility():
-  File "renpy/common/00accessibility.rpy", line 114, in prepare
-    screen _accessibility():
-  File "renpy/common/00accessibility.rpy", line 118, in prepare
-    frame:
-  File "renpy/common/00accessibility.rpy", line 118, in prepare
-    frame:
-  File "renpy/common/00accessibility.rpy", line 122, in prepare
-    has side "c b":
-  File "renpy/common/00accessibility.rpy", line 122, in prepare
-    has side "c b":
-  File "renpy/common/00accessibility.rpy", line 127, in prepare
-    fixed:
-  File "renpy/common/00accessibility.rpy", line 127, in prepare
-    fixed:
-  File "renpy/common/00accessibility.rpy", line 129, in prepare
-    viewport:
-  File "renpy/common/00accessibility.rpy", line 129, in prepare
-    viewport:
-  File "renpy/common/00accessibility.rpy", line 133, in prepare
-    has grid 2 1:
-  File "renpy/common/00accessibility.rpy", line 133, in prepare
-    has grid 2 1:
-  File "renpy/common/00accessibility.rpy", line 137, in prepare
-    vbox:
-  File "renpy/common/00accessibility.rpy", line 137, in prepare
-    vbox:
-  File "renpy/common/00accessibility.rpy", line 161, in prepare
-    bar value Preference("font size")
-  File "renpy/common/00accessibility.rpy", line 161, in prepare
-    bar value Preference("font size")
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "renpy/common/00accessibility.rpy", line 161, in <module>
-    bar value Preference("font size")
-  File "renpy/common/00preferences.rpy", line 651, in Preference
-    rv = get()
-  File "renpy/common/00preferences.rpy", line 508, in get
-    return FieldValue(_preferences, "font_size", range=bar_range, style="slider", offset=.5, action=_DisplayReset())
-  File "renpy/common/00barvalues.rpy", line 234, in __init__
-    super(FieldValue, self).__init__(*args, **kwargs)
-  File "renpy/common/00barvalues.rpy", line 131, in __init__
-    if isinstance(range, float):
-TypeError: isinstance() arg 2 must be a type or tuple of types
+  File "game/script.rpy", line 105, in script
+    show char neutral dissolve
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'char neutral' does not accept attributes 'dissolve'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 02A2 game jam 1.0
-Thu Jul 11 17:01:23 2024
+Thu Jul 11 19:43:38 2024
