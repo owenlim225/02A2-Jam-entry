@@ -14,6 +14,7 @@ image char neutral = "char_neutral.png"
 image char interested = "char_interested.png"
 image char shocked = "char_shocked.png"
 image char dead = "char_dead.png"
+image char eyeless = "char_eyeless.png"
 
 
 
@@ -116,7 +117,7 @@ label why2:
         c ".."
         c "..."
         c "Actually,"
-        if persistent.game_played == True:
+        if persistent.game_played:
             c "It was after yadaran vanished me to an obscure realm,"
             c "I lost all of my powers."
             c "Thats when the Filipinos managed to catch me and imprison me here." 
@@ -256,6 +257,7 @@ label badEnding:
                 show char dead
                 c "[pc_name]"
                 c "[pc_name] [pc_name] [pc_name]"
+                show char eyeless
                 c "Do it all over again correctly, right?"
 
 

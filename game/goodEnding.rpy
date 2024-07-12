@@ -1,2 +1,2 @@
 label goodEnding:
-    
+    pass

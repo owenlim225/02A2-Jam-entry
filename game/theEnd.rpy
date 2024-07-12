@@ -1,12 +1,3 @@
-define lipat = Dissolve(10.0)
-define c = Character("The void")
-define pov = Character("[povname]")
-
-image char amazed = "char_amazed.png"
-image char angry = "char_angry.png"
-image char neutral = "char_neutral.png"
-image char interested = "char_interested.png"
-image char shocked = "char_shocked.png"
 
 label theEnd:
     show char interested with dissolve 
