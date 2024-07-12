@@ -16,6 +16,7 @@ image char shocked = "char_shocked.png"
 image char dead = "char_dead.png"
 
 
+
 label start:
 
     "Jacksonville\nRealm: 6.2\n20830ch AD"
