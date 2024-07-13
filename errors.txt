@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 293: reached end of line when expecting ':'.
-    if renpy.get_screen("main_menu")
-                                    ^
+File "game/theEnd.rpy", line 23: expected statement.
+    renpy.quit()
+                ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 00:51:03 2024
+Sat Jul 13 16:06:34 2024

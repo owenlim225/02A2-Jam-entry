@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 257, in script
-    c "[pc_name]"
-NameError: Name 'pc_name' is not defined.
+  File "game/returnGameScript.rpy", line 5, in script
+    c "[ranDialogue]"
+NameError: Name 'ranDialogue' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 257, in script
-    c "[pc_name]"
+  File "game/returnGameScript.rpy", line 5, in script
+    c "[ranDialogue]"
   File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
     Say.execute(self)
   File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
@@ -35,9 +35,9 @@ Full traceback:
   File "<none>", line 1, in <module>
   File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\substitutions.py", line 313, in __getitem__
     raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'pc_name' is not defined.
+NameError: Name 'ranDialogue' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 02A2 game jam 1.0
-Sat Jul 13 01:03:32 2024
+Sat Jul 13 16:18:14 2024
