@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/theEnd.rpy", line 23: expected statement.
-    renpy.quit()
-                ^
+File "game/newGameScript.rpy", line 57: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 16:06:34 2024
+Sat Jul 13 18:20:22 2024

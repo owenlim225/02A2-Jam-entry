@@ -1,43 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/returnGameScript.rpy", line 5, in script
-    c "[ranDialogue]"
-NameError: Name 'ranDialogue' is not defined.
+  File "renpy/common/00keymap.rpy", line 487, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 487, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>. (perhaps store.subprocess = <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/returnGameScript.rpy", line 5, in script
-    c "[ranDialogue]"
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
-    Say.execute(self)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 1379, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 1293, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\character.py", line 1273, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\substitutions.py", line 371, in substitute
-    s = interpolate(s, kwargs) # type: ignore
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\substitutions.py", line 313, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'ranDialogue' is not defined.
+  File "renpy/common/00keymap.rpy", line 487, in script
+    python hide:
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 487, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\loadsave.py", line 436, in save
+    reraise(t, e, tb)
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\loadsave.py", line 417, in save
+    dump((roots, renpy.game.log), logf)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1275, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>. (perhaps store.subprocess = <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 02A2 game jam 1.0
-Sat Jul 13 16:18:14 2024
+Sat Jul 13 18:14:06 2024

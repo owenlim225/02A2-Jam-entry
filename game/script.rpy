@@ -2,10 +2,10 @@
 default pleased = False
 default displeased = False
 default liked = False
-default persistent.game_played = False
+# default persistent.game_played = False
 
 define lipat = Dissolve(5.0)
-define c = Character("Experiment 69")
+define c = Character("???")
 define pov = Character("[povname]")
 
 image char amazed = "char_amazed.png"
@@ -18,11 +18,12 @@ image char eyeless = "char_eyeless.png"
 
 
 label start:
-    if not persistent.game_played:
-        jump newGame
-    else:
-        define c = Character("")
-        jump returnGame
+    jump newGame
+    # if not persistent.game_played:
+    #     jump newGame
+    # else:
+        
+    #     jump returnGame
 
     # This ends the game.
     return

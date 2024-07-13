@@ -6,7 +6,8 @@ label newGame:
     "It's your first day on the job."
     "Following orders, you head first to the lab, awaiting your superior who toured you around the facility."
     scene bg lab with fade
-    "You have your employee handbook on hand, read it?"
+    "You have your employee handbook on hand,"
+    "read it?"
     menu:
         "Yes":
             jump companyIntro
@@ -20,8 +21,9 @@ label companyIntro:
     "Continue?"
     menu:
         "Yes":
-            "Feel free to explore our state-of-the-art facilities and meet our talented team."
-            "Remember, confidentiality is key—what happens at LiveCorp stays at LiveCorp."
+            "Feel free to explore our facilities and meet our talented team."
+            "Remember, confidentiality is key!"
+            "what happens at LiveCorp STAYS at LiveCorp."
             "Together, we're shaping the future..."
             "Continue?"
             menu:
@@ -40,6 +42,7 @@ label companyIntro:
 label scene1:
     "You feel tired after reading all of it..."
     ""
+    scene guide
     c "So you are new the guy I heard about."
     ""
     "You heard a voice inside your head."
@@ -170,8 +173,8 @@ label scene4A:
             pass
         "...":
             pass
-    show char interested with dissolve
     scene black
+    show char interested with dissolve
     c "[pc_name]"
     scene bg lab
     c "There's no need to lie."
@@ -255,8 +258,8 @@ label findEnding:
         jump NeutralEnding
 
 label NeutralEnding:
-    show char dead 
     scene black
+    show char dead 
     c "You are boring, you know."
     if not persistent.game_played:
         menu:
@@ -273,8 +276,8 @@ label NeutralEnding:
             "Anymore":
                 jump badEnding
     else:
-        show char eyeless
         scene black
+        show char eyeless
         c "And you already came here."
         c "Didn't you read the title?"
 
@@ -291,8 +294,8 @@ label GoodEnding:
     c "But alas, we're limited by the constraint of this world."
     show char interested with dissolve
     c "Our world."
-    show char neutral with dissolve
     scene black
+    show char neutral with dissolve
     c "Not your world, [pc_name]"
     c "Quit now. And never come back."
 
