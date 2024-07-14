@@ -1,4 +1,19 @@
 label splashscreen:
+    scene black
+    with Pause(1)
+
+    show splashScreen1 with dissolve
+    with Pause(2)
+
+    show splashScreen2 with dissolve
+    with Pause(2)
+
+    show splashScreen3 with dissolve
+    with Pause(3)
+
+    scene black with dissolve
+    with Pause(2)
+
     python:
         import os
         import subprocess

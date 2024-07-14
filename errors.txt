@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/newGameScript.rpy", line 57: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "
+File "game/newGameScript.rpy", line 158: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 18:20:22 2024
+Sun Jul 14 14:33:49 2024

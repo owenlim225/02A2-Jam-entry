@@ -1,39 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-Exception: Could not pickle <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>. (perhaps store.subprocess = <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>)
+  File "game/newGameScript.rpy", line 259, in script
+    call quitGame
+  File "game/newGameScript.rpy", line 259, in <module>
+    call quitGame
+NameError: name 'easein' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\loadsave.py", line 436, in save
-    reraise(t, e, tb)
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\loadsave.py", line 417, in save
-    dump((roots, renpy.game.log), logf)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\compat\pickle.py", line 103, in dump
-    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
-  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1275, in module_pickle
-    raise Exception("Could not pickle {!r}.".format(module))
-Exception: Could not pickle <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>. (perhaps store.subprocess = <module 'subprocess' from 'C:\\Users\\sherwin\\Downloads\\renpy-8.2.3-sdk\\lib\\python3.9\\subprocess.pyc'>)
+  File "game/newGameScript.rpy", line 259, in script
+    call quitGame
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\sherwin\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/newGameScript.rpy", line 259, in <module>
+    call quitGame
+NameError: name 'easein' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 02A2 game jam 1.0
-Sat Jul 13 18:14:06 2024
+Sun Jul 14 14:20:05 2024
